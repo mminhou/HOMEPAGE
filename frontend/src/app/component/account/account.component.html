@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="account-header col-md-12">
+      <h6>welcome {{currentUser.user.nickname}}</h6>
+      <hr />
+
+      <!-- Account detail -->
+      <div class="createAccount" style="background: rgb(128, 128, 128)">
+        <input class="text-center" (click)="logout()" value="profile settings">
+      </div>
+      <hr />
+      <!-- Sign out -->
+      <div class="createAccount" style="background: rgb(80, 80, 80)">
+        <input class="text-center" (click)="logout()" value="sign out">
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

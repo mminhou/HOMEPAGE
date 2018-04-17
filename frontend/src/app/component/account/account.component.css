@@ -1,0 +1,33 @@
+/* Account */
+.account-header > h6 {
+  margin-top: 10px;
+  font-family: 'Lora', serif;
+}
+.createAccount > a {
+  color: white;
+}
+.createAccount > p {
+  font-size: 13px;
+  color: grey;
+}
+.createAccount > a > p {
+  color: white;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 10px 0;
+}
+.createAccount > a:hover {
+  text-decoration: none;
+}
+.createAccount > input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-variant: all-small-caps;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}

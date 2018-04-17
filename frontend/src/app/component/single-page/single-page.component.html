@@ -1,0 +1,25 @@
+<div class="container-fluid h-100 text-center" style="padding-top: 140px;" [ngClass]="category + '_wrapper'">
+  <div class="container">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-12" style="background-color: white; opacity: 0.9; padding-top: 16px; border-radius: 10px;">
+        <div class="list-group">
+          <!-- ngFor sortgrid error // not sorting by '-id' -->
+          <div *ngFor="let post of this._postsArray | paginate: { itemsPerPage: 6, currentPage: p } | sortgrid: '-id'">
+            <a href="/{{category}}/{{category_id}}/{{post.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" style="padding-bottom: 5px;">{{post.id}}{{post.title}}</h5>
+                <small>{{post.created | slice:0:10}}</small>
+              </div>
+              <!--<p class="mb-1 pull-left">{{post.content}}</p>-->
+              <!--<small class="float-right">/ {{post.category}}</small>-->
+              <footer class="blockquote-footer">{{ post.user }}</footer>
+            </a>
+            <hr style="margin-top: 0"/>
+          </div>
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

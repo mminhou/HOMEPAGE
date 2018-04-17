@@ -1,0 +1,37 @@
+<div *ngIf="!authService.isLoggedIn()">
+  <nav id="global-nav" class="nav" [ngStyle]="{'background': getColor()}">
+    <div class="container" style="margin: 0 2%; width: 100%; padding: 0;">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <div class="float-left nav_left" ><img class="site-title"style="padding-right: 20px; font-variant: small-caps;" (click)="home()" src="../assets/logo.png" style="color: white;"></div>
+          <!-- small medium screen display -->
+          <div class="d-md-none float-right">
+            icon
+          </div>
+          <div class="d-none d-md-block">
+            <div class="float-right nav_right">
+              <ul class="nav-list">
+                <li><a class="navbar-link" href="/project">project</a></li>
+                <li *ngFor="let category of this._categoryArray | sortgrid: 'id';"><a class="navbar-link" href="/{{category.title}}/{{category.id}}">{{category.title}}</a></li>
+                <li>
+                  <div class="dropdown" style="line-height: 5px;">
+                    <div id="dropdownMenu_account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-user-circle" style="font-size: 18px;"></i>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu_account" style="width: 250px;">
+                        <account-app></account-app>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div [@fadeAnimation]="getRouterOutletState(o)" class="h-100">
+  <router-outlet #o="outlet"></router-outlet>
+</div>

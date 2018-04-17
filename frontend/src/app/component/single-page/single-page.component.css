@@ -1,0 +1,39 @@
+/* wrapper */
+.ai_wrapper {
+  background-image: url('../../../assets/ai_wrapper.jpg');
+  background-size: cover;
+}
+.big_data_wrapper {
+  background-image: url('../../../assets/3.jpg');
+  background-size: cover;
+}
+.computer_vision_wrapper {
+  background-image: url('../../../assets/3.jpg');
+  background-size: cover;
+}
+.study_wrapper {
+  background-image: url('../../../assets/3.jpg');
+  background-size: cover;
+}
+.project_wrapper {
+  background-image: url('../../../assets/3.jpg');
+  background-size: cover;
+}
+
+
+.list-group-item
+{
+	border:0px solid white;
+  margin-bottom: 20px;
+}
+.list-group-item h5
+{
+	color:#057e8e;
+}
+.list-group-item .mb-1  {
+	font-size: 15px;
+}
+.pagination {
+  margin: -3px 0 0;
+  border-radius: 50px;
+}
