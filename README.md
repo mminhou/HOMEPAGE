@@ -1,7 +1,12 @@
 Web developer
 =============
 
-backend : Djangorestframework
-frontend : Angular4
+## backend
+
+    Djangorestframework
+
+## frontend
+
+    Angular4
 
 
