@@ -2,3 +2,41 @@
       border-radius: 50%;
 
 }
+.icon {
+  margin-right: 30px;
+}
+.icon-container {
+  margin-bottom: 10px;
+}
+
+.card {
+  background: url('https://s-media-cache-ak0.pinimg.com/736x/99/b0/48/99b048e4867553381e6b3a38ccbc332a.jpg') no-repeat;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+  transform: rotate3d(1, 1, 0, 0deg);
+  background-size: cover;
+  height: 300px;
+  background-position: bottom center;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: -3px 3px 0px 3px #333, -30px 30px 15px rgba(0, 0, 0, .4);
+  transform: rotate3d(1, 1, 0, 20deg);
+  transition: all .4s;
+  border-radius: 10px;
+}
+
+.card > p {
+  font-size: 30px;
+  transform: rotate3d(1, 1, 0, 0deg);
+  position: relative;
+  /*color: white;*/
+  /*left: 30px;*/
+  transition: all .4s;
+  font-family: 'Pacifico', cursive;
+}
+
+.card:hover p {
+  transform: rotate3d(1, 1, 0, 10deg);
+}
