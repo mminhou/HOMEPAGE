@@ -22,13 +22,13 @@ import { SafeHtmlPipe } from "./directive/safe_html_pipe";
 
 // Component
 import { AccountComponent } from './component/account/account.component';
-import { ProfileComponent } from './component/profile/profile.component';
 import { GlobalLoginComponent } from './component/global-login/global-login.component'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
 import { SinglePageComponent } from './component/single-page/single-page.component';
 import { SinglePageDetailComponent } from './component/single-page-detail/single-page-detail.component';
+import { AboutComponent } from './component/about/about.component';
 import { ProjectComponent } from './component/project/project.component';
 
 
@@ -40,10 +40,10 @@ import { ProjectComponent } from './component/project/project.component';
     AccountComponent,
     SortGridPipe,
     SafeHtmlPipe,
-    ProfileComponent,
     GlobalLoginComponent,
     SinglePageComponent,
     SinglePageDetailComponent,
+    AboutComponent,
     ProjectComponent,
   ],
   imports: [

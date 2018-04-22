@@ -7,7 +7,7 @@
           <div *ngFor="let post of this._postsArray | paginate: { itemsPerPage: 6, currentPage: p } | sortgrid: '-id'">
             <a href="/{{category}}/{{category_id}}/{{post.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
               <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1" style="padding-bottom: 5px;">{{post.id}}{{post.title}}</h5>
+                <h5 class="mb-1" style="padding-bottom: 5px;">{{post.title}}</h5>
                 <small>{{post.created | slice:0:10}}</small>
               </div>
               <!--<p class="mb-1 pull-left">{{post.content}}</p>-->

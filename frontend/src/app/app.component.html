@@ -3,7 +3,7 @@
     <div class="container" style="margin: 0 2%; width: 100%; padding: 0;">
       <div class="row text-center">
         <div class="col-md-12">
-          <div class="float-left nav_left" ><img class="site-title"style="padding-right: 20px; font-variant: small-caps;" (click)="home()" src="../assets/logo.png" style="color: white;"></div>
+          <div class="float-left nav_left" ><img class="site-title" style="padding-right: 20px;" (click)="home()" src="../assets/logo.png"></div>
           <!-- small medium screen display -->
           <div class="d-md-none float-right">
             icon
@@ -11,6 +11,7 @@
           <div class="d-none d-md-block">
             <div class="float-right nav_right">
               <ul class="nav-list">
+                <li><a class="navbar-link" href="/about">about</a></li>
                 <li><a class="navbar-link" href="/project">project</a></li>
                 <li *ngFor="let category of this._categoryArray | sortgrid: 'id';"><a class="navbar-link" href="/{{category.title}}/{{category.id}}">{{category.title}}</a></li>
                 <li>

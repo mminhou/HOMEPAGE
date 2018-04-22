@@ -23,11 +23,11 @@
 
 
           <div class="portlet-title">
+            <h3 style="font-size: 35px; weight: 700; margin: 50px 0;">{{posts.title}}</h3>
 
           </div>
-          <div class="portlet-body">
-            <h3 style="font-size: 35px; weight: 700; margin: 50px 0;">{{posts.title}}</h3>
-            <div [innerHTML]="posts.content | safeHtml"></div>
+          <div class="portlet-body" style="padding: 20px 10% 0 10%;">
+            <div [innerHTML]="posts.content | safeHtml" class="text-justify"></div>
             <div *ngIf="posts.file">
               <div class="portlet-footer actions" style="border-bottom: 0; margin-top: 1%;">
                 <small style="margin-right: 5px;">{{posts.file}}</small><a class="btn icon-btn btn-default" href="{{posts.file}}"><span class="fa fa-save img-circle text-muted" style="margin-right: 6%;"></span>Download</a>
@@ -40,7 +40,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <button class="btn main-btn" (click)="back()">Back</button>
+        <button class="btn main-btn" (click)="back()" style="margin-bottom: 30px;">Back</button>
       </div>
     </div>
   </div>

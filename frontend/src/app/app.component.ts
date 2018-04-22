@@ -59,18 +59,14 @@ export class AppComponent implements OnInit {
     switch(this.router.routerState.snapshot.url) {
       case '/home':
         return 'transparent';
-      case '/ai/1':
+      case '/study/520024':
         return 'transparent';
-      case '/big_data/2':
+      case '/project/417780':
         return 'transparent';
-      case '/computer_vision/3':
-        return 'transparent';
-      case '/study/4':
-        return 'transparent';
-      case '/project/5':
-        return 'transparent';
+      case '/about':
+        return 'black';
     }
-    return 'gray';
+    return 'transparent';
   }
 
   home() {

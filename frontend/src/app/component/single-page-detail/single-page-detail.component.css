@@ -1,25 +1,12 @@
 /* wrapper */
-.ai_wrapper {
-  /*background-image: url('../../../assets/ai_wrapper.jpg');*/
-  background-color: white;
-  background-size: cover;
-}
-.big_data_wrapper {
-  background-image: url('../../../assets/3.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.computer_vision_wrapper {
-  background-image: url('../../../assets/3.jpg');
-  background-size: cover;
-}
 .study_wrapper {
-  background-image: url('../../../assets/3.jpg');
+  /*background-color: white;*/
+  background-image: url('../../../assets/ai_wrapper.jpg');
   background-size: cover;
 }
 .project_wrapper {
-  background-image: url('../../../assets/3.jpg');
+  background-color: #ffe6e6;
+  /*background-image: url('../../../assets/3.jpg');*/
   background-size: cover;
 }
 

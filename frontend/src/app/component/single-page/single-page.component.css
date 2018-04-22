@@ -1,18 +1,6 @@
 /* wrapper */
-.ai_wrapper {
-  background-image: url('../../../assets/ai_wrapper.jpg');
-  background-size: cover;
-}
-.big_data_wrapper {
-  background-image: url('../../../assets/3.jpg');
-  background-size: cover;
-}
-.computer_vision_wrapper {
-  background-image: url('../../../assets/3.jpg');
-  background-size: cover;
-}
 .study_wrapper {
-  background-image: url('../../../assets/3.jpg');
+  background-image: url('../../../assets/ai_wrapper.jpg');
   background-size: cover;
 }
 .project_wrapper {
