@@ -12,7 +12,6 @@
             <div class="float-right nav_right">
               <ul class="nav-list">
                 <li><a class="navbar-link" href="/about">about</a></li>
-                <li><a class="navbar-link" href="/project">project</a></li>
                 <li *ngFor="let category of this._categoryArray | sortgrid: 'id';"><a class="navbar-link" href="/{{category.title}}/{{category.id}}">{{category.title}}</a></li>
                 <li>
                   <div class="dropdown" style="line-height: 5px;">

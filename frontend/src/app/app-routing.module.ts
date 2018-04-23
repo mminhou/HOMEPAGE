@@ -16,7 +16,6 @@ const routes: Routes = [
   { path: ':category/:category_id', component: SinglePageComponent, canActivate: [AuthGuardService] },
   { path: ':category/:category_id/:posts_id', component: SinglePageDetailComponent, canActivate: [AuthGuardService] },
   { path: 'about', component: AboutComponent, canActivate: [AuthGuardService] },
-  { path: 'project', component: ProjectComponent, canActivate: [AuthGuardService] },
   // add component
 ];
 
