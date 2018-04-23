@@ -32,6 +32,8 @@ ALLOWED_HOSTS = [
     'localhost:8000',
     'ec2-13-125-195-234.ap-northeast-2.compute.amazonaws.com',
     '18.204.211.251',
+    'elimmmile.com',
+    'www.elimmmile.com',
 ]
 
 # Application definition
