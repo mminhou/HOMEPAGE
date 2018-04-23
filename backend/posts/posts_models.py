@@ -8,7 +8,7 @@ class Posts(models.Model):
     category = models.ForeignKey(Category, related_name="Posts", on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     content = RichTextUploadingField()
-    created = models.DateTimeField('date joined', auto_now_add=True)
+    created = models.DateTimeField('date joined')
     file = models.FileField(blank=True, null=False)
 
     def __str__(self):
