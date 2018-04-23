@@ -28,7 +28,8 @@
 }
 
 .card > p {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 700;
   transform: rotate3d(1, 1, 0, 0deg);
   position: relative;
   /*color: white;*/
@@ -40,3 +41,4 @@
 .card:hover p {
   transform: rotate3d(1, 1, 0, 10deg);
 }
+

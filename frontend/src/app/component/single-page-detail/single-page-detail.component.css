@@ -1,12 +1,10 @@
 /* wrapper */
 .study_wrapper {
-  /*background-color: white;*/
   background-image: url('../../../assets/ai_wrapper.jpg');
   background-size: cover;
 }
 .project_wrapper {
-  background-color: #ffe6e6;
-  /*background-image: url('../../../assets/3.jpg');*/
+  background-image: url('../../../assets/project.jpg');
   background-size: cover;
 }
 
