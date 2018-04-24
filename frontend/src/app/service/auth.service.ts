@@ -8,7 +8,7 @@ export class AuthService {
 
 
   private test_authURL = 'http://localhost:8000/api-token-auth/'
-  private _authURL = 'http://13.125.195.234:80/api-token-auth/'
+  private _authURL = 'http://18.204.211.251/api-token-auth/'
 
   constructor(private http: Http, private router: Router) { }
 
@@ -21,7 +21,7 @@ export class AuthService {
   }
   // Login manager
   login(log_email: string, log_password: string) {
-    return this.http.post(this.test_authURL , { email: log_email, password: log_password })
+    return this.http.post(this._authURL , { email: log_email, password: log_password })
       .map((response: Response) => {
         // login successful if there's a jwt token in the response
         let user = response.json();

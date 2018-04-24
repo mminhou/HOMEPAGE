@@ -7,12 +7,12 @@ import "rxjs/Rx";
 export class CategoryService {
 
   private test_categoryURL = "http://localhost:8000/category/";
-  private _categoryURL = "http://13.125.195.234:80/category/";
+  private _categoryURL = "http://18.204.211.251/category/";
 
   constructor(private http: Http) { }
 
   getCategoryList(): Observable<any[]> {
-    return this.http.get(this.test_categoryURL).map((response: Response) => {
+    return this.http.get(this._categoryURL).map((response: Response) => {
       return <any[]>response.json();
     }).catch(this.handleError);
   }

@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
       case '/project/417780':
         return 'transparent';
       case '/about':
-        return 'black';
+        return 'url("../../assets/nav.jpg")';
     }
     return 'transparent';
   }

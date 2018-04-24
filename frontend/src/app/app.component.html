@@ -6,14 +6,21 @@
           <div class="float-left nav_left" ><img class="site-title" style="padding-right: 20px;" (click)="home()" src="../assets/logo.png"></div>
           <!-- small medium screen display -->
           <div class="d-md-none float-right">
-            icon
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#links" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" style="color:white"></i>
+            </button>
+
+            <!-- account toggle -->
+
           </div>
           <div class="d-none d-md-block">
-            <div class="float-right nav_right">
+            <div class="float-right nav_right" id="collapsingNavbar">
               <ul class="nav-list">
-                <li><a class="navbar-link" href="/about">about</a></li>
-                <li *ngFor="let category of this._categoryArray | sortgrid: 'id';"><a class="navbar-link" href="/{{category.title}}/{{category.id}}">{{category.title}}</a></li>
-                <li>
+
+
+                <li><a class="navbar-link nav-item" href="/about">about</a></li>
+                <li *ngFor="let category of this._categoryArray | sortgrid: 'id';" class="nav-item"><a class="navbar-link" href="/{{category.title}}/{{category.id}}">{{category.title}}</a></li>
+                <li class="nav-item">
                   <div class="dropdown" style="line-height: 5px;">
                     <div id="dropdownMenu_account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-user-circle" style="font-size: 18px;"></i>
@@ -23,6 +30,8 @@
                     </div>
                   </div>
                 </li>
+
+
               </ul>
             </div>
           </div>

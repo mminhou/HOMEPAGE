@@ -15,12 +15,12 @@ const routes: Routes = [
   { path: 'global_login', component: GlobalLoginComponent },
   { path: ':category/:category_id', component: SinglePageComponent, canActivate: [AuthGuardService] },
   { path: ':category/:category_id/:posts_id', component: SinglePageDetailComponent, canActivate: [AuthGuardService] },
-  { path: 'about', component: AboutComponent, canActivate: [AuthGuardService] },
+  { path: 'about', component: AboutComponent},
   // add component
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes)],
   exports: [ RouterModule ],
 })
 export class AppRoutingModule { }

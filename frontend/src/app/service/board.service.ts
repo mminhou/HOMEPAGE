@@ -9,24 +9,24 @@ import { Posts } from '../model/posts';
 export class BoardService {
 
   private test_postsURL = "http://localhost:8000/posts/"
-  private _postsURL = "http://13.125.195.234:80/posts/"
+  private _postsURL = "http://18.204.211.251/posts/"
 
   constructor(private http: Http) { }
 
   getAllPostsList(): Observable<Posts[]> {
-    return this.http.get(this.test_postsURL).map((response: Response) => {
+    return this.http.get(this._postsURL).map((response: Response) => {
       return <Posts[]>response.json();
     }).catch(this.handleError);
   }
 
   getPostsById(id:string): Observable<Posts> {
-    return this.http.get(this.test_postsURL + id + '/').map((response: Response) => {
+    return this.http.get(this._postsURL + id + '/').map((response: Response) => {
       return <Posts>response.json();
     }).catch(this.handleError);
   }
 
   create(posts: any, filename: any) {
-    return this.http.post(this.test_postsURL, posts, this.jwt(filename)).map((response: Response) => response.json());
+    return this.http.post(this._postsURL, posts, this.jwt(filename)).map((response: Response) => response.json());
   }
 
   update(posts: any, id: any) {
@@ -34,7 +34,7 @@ export class BoardService {
   }
 
   delete(id:string) {
-    return this.http.delete(this.test_postsURL + id + '/').map((response: Response) => {
+    return this.http.delete(this._postsURL + id + '/').map((response: Response) => {
       return <Posts>response.json();
     }).catch(this.handleError);
   }
