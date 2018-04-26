@@ -7,7 +7,6 @@ import { GlobalLoginComponent } from './component/global-login/global-login.comp
 import { SinglePageComponent } from './component/single-page/single-page.component';
 import { SinglePageDetailComponent } from './component/single-page-detail/single-page-detail.component';
 import { AboutComponent } from './component/about/about.component';
-import { ProjectComponent } from './component/project/project.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/global_login', pathMatch: 'full', canActivate: [AuthGuardService] },
@@ -15,7 +14,7 @@ const routes: Routes = [
   { path: 'global_login', component: GlobalLoginComponent },
   { path: ':category/:category_id', component: SinglePageComponent, canActivate: [AuthGuardService] },
   { path: ':category/:category_id/:posts_id', component: SinglePageDetailComponent, canActivate: [AuthGuardService] },
-  { path: 'about', component: AboutComponent},
+  { path: 'about', component: AboutComponent, canActivate: [AuthGuardService]},
   // add component
 ];
 

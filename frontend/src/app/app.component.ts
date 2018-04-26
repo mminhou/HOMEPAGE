@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   title = 'app';
   _categoryArray: any[] = [];
   data: any;
+  active = false;
 
   constructor( private route: ActivatedRoute, private router: Router, private authService: AuthService, private categoryService: CategoryService,
   ) {}
@@ -52,9 +53,23 @@ export class AppComponent implements OnInit {
         ));
   }
 
-  getColor() {
+  active_nav() {
+    if (this.router.routerState.snapshot.url == '/global_login') {
+      if (localStorage.getItem('currentUser')) {
+        this.home();
+      }
+      return true;
+    }
+    else
+      return false;
+  }
 
-    // console.log(this.route.snapshot.paramMap.get('category'));
+  reload(){
+    location.reload();
+  }
+
+
+  getColor() {
     console.log(this.router.routerState.snapshot.url);
     switch(this.router.routerState.snapshot.url) {
       case '/home':

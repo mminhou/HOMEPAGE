@@ -29,7 +29,6 @@ import { LoginComponent } from './component/login/login.component';
 import { SinglePageComponent } from './component/single-page/single-page.component';
 import { SinglePageDetailComponent } from './component/single-page-detail/single-page-detail.component';
 import { AboutComponent } from './component/about/about.component';
-import { ProjectComponent } from './component/project/project.component';
 
 
 @NgModule({
@@ -44,7 +43,6 @@ import { ProjectComponent } from './component/project/project.component';
     SinglePageComponent,
     SinglePageDetailComponent,
     AboutComponent,
-    ProjectComponent,
   ],
   imports: [
     BrowserModule,

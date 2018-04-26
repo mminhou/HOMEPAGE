@@ -43,5 +43,6 @@
 }
 
 .intro > p {
-  font-variant: small-caps;
+  /*font-variant: small-caps;*/
+  font-style: italic;
 }

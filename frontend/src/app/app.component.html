@@ -1,20 +1,30 @@
-<div *ngIf="!authService.isLoggedIn()">
-  <nav id="global-nav" class="nav" [ngStyle]="{'background': getColor()}">
+<div [hidden]="active_nav()">
+  <nav id="global-nav" class="nav navbar navbar-expand-lg" [ngStyle]="{'background': getColor()}" style="padding: 0 20px 0 0;">
     <div class="container" style="margin: 0 2%; width: 100%; padding: 0;">
       <div class="row text-center">
         <div class="col-md-12">
-          <div class="float-left nav_left" ><img class="site-title" style="padding-right: 20px;" (click)="home()" src="../assets/logo.png"></div>
+          <div class="float-left nav_left" ><img class="site-title navbar-brand" style="padding-right: 20px;" (click)="home()" src="../assets/logo.png"></div>
+
           <!-- small medium screen display -->
           <div class="d-md-none float-right">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#links" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fa fa-bars" style="color:white"></i>
+              <i class="fa fa-bars float-right" style="color:white"></i>
+              <br />
+              <div id="links" class="collapse">
+                <a class="navbar-link a float-right" routerLink="/home">home</a><br />
+                <a class="navbar-link a float-right" routerLink="/about">about</a><br />
+                <a class="navbar-link a float-right" routerLink="/project/302703" (click)="reload()">project</a><br />
+                <a class="navbar-link a float-right" routerLink="/study/520024" (click)="reload()">study</a><br />
+              </div>
             </button>
+
 
             <!-- account toggle -->
 
           </div>
+
           <div class="d-none d-md-block">
-            <div class="float-right nav_right" id="collapsingNavbar">
+            <div class="float-right nav_right">
               <ul class="nav-list">
 
 

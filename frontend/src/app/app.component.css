@@ -129,3 +129,9 @@
   height: 100%;
 }
 
+.a {
+  margin: 10px;
+  font-weight: 700;
+  font-variant: small-caps;
+  color: #3b89ce;
+}
