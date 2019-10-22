@@ -14,7 +14,7 @@ docutils==0.14
 httpie==0.9.9
 idna==2.6
 jmespath==0.9.3
-Pillow==5.0.0
+Pillow==6.2.0
 pyasn1==0.4.2
 Pygments==2.2.0
 PyJWT==1.5.3
